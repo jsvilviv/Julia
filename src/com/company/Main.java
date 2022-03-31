@@ -4,14 +4,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String name ="Julia";
-       //  int num2=5;
-       //  int num3;
-       //  num3=num2*num;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Як тебе звати?");
+        String name = sc.nextLine();
+        System.out.println("Добрий день " + name);
 
-        System.out.println(name);
-       // System.out.print(num3);
-       // System.out.println(num3);
+        System.out.println(name + ", скільки тобі років?");
+        int old = sc.nextInt();
+        System.out.println("Тобі " + old);
 
+        if (old < 18)
+            System.out.println("herbata");
+       else if (old == 30)
+            System.out.println("pisać");
+        else
+            System.out.println("Ziemniak");
     }
+
 }
